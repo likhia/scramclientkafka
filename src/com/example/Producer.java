@@ -28,6 +28,8 @@ public class Producer {
 	properties.put("sasl.mechanism", "SCRAM-SHA-512");
         properties.put("sasl.jaas.config" , args[1]);
 
+	properties.put("group.id", "my-group");
+
         KafkaProducer kafkaProducer = new KafkaProducer(properties);
 
 
